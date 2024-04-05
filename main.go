@@ -1,6 +1,7 @@
 package main
 
 import (
+	"dxt-tools/cmd/processes"
 	"fmt"
 	"github.com/spf13/cobra"
 )
@@ -16,8 +17,10 @@ var cmdPrintHello = &cobra.Command{
 }
 
 func main() {
+
 	var rootCmd = &cobra.Command{Use: "app"}
 	rootCmd.AddCommand(cmdPrintHello)
+	rootCmd.AddCommand(processes.CmdProcess)
 
 	rootCmd.Execute()
 }
