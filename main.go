@@ -18,7 +18,7 @@ var cmdPrintHello = &cobra.Command{
 
 func main() {
 
-	var rootCmd = &cobra.Command{Use: "app"}
+	var rootCmd = &cobra.Command{Use: "dxt"}
 	rootCmd.AddCommand(cmdPrintHello)
 	rootCmd.AddCommand(processes.CmdProcess)
 
