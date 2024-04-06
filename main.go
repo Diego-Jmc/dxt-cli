@@ -2,6 +2,7 @@ package main
 
 import (
 	"dxt-tools/cmd/net"
+	"dxt-tools/cmd/performance"
 	"dxt-tools/cmd/processes"
 	"fmt"
 	"github.com/spf13/cobra"
@@ -23,6 +24,7 @@ func main() {
 	rootCmd.AddCommand(cmdPrintHello)
 	rootCmd.AddCommand(processes.CmdProcess)
 	rootCmd.AddCommand(net.CmdProcess)
+	rootCmd.AddCommand(performance.CmdProcess)
 
 	rootCmd.Execute()
 
